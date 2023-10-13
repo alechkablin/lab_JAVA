@@ -5,5 +5,6 @@ public class Test {
         for (Seasons mda : Seasons.values()) {
             mda.message(mda);
         }
+        System.out.println("end");
     }
 }
