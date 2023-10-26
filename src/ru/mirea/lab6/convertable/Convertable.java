@@ -1,4 +1,4 @@
-package ru.mirea.lab6;
+package ru.mirea.lab6.convertable;
 
 interface Convertable {
     void convert();

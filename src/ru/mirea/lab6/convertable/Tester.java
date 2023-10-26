@@ -1,4 +1,4 @@
-package ru.mirea.lab6;
+package ru.mirea.lab6.convertable;
 
 public class Tester {
     public static void main(String[] args) {
