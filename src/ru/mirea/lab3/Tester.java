@@ -10,7 +10,7 @@ public class Tester {
         ArrayList<Circle> circles = new ArrayList<>();
         Scanner read = new Scanner(System.in);
         Random rand = new Random();
-        for(int i = 0; i < 5; i++){
+        for (int i = 0; i < 5; i++) {
             double x1 = rand.nextDouble(10) - 5.0;
             double y1 = rand.nextDouble(10) - 5.0;
             double x2 = rand.nextDouble(10) - 5.0;
@@ -19,16 +19,19 @@ public class Tester {
             circles.add(buff_circle);
         }
         Collections.sort(circles);
-        max_el(circles);
+        maxEl(circles);
         min_el(circles);
     }
-    public static void max_el(ArrayList<Circle> circles){
+
+    public static void maxEl(ArrayList<Circle> circles) {
         System.out.println("Max circle info:\n" + Collections.max(circles));
     }
-    public static void min_el(ArrayList<Circle> circles){
+
+    public static void min_el(ArrayList<Circle> circles) {
         System.out.println("Min circle info:\n" + Collections.min(circles));
     }
-    public static void revers(ArrayList<Circle> circles){
+
+    public static void revers(ArrayList<Circle> circles) {
         Collections.sort(circles);
     }
 }

@@ -1,8 +1,9 @@
 package ru.mirea.lab1;
+
 import java.util.Scanner;
+
 public class lab1_3 {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
         int size = read.nextInt();
         int array[] = new int[size];
@@ -18,6 +19,6 @@ public class lab1_3 {
         System.out.println("Сумма элементов массива:");
         System.out.println(sum);
         System.out.println("Среднее арифметическое ряда:");
-        System.out.println(sum/size);
+        System.out.println(sum / size);
     }
 }

@@ -2,7 +2,7 @@ package ru.mirea.lab3;
 
 public class Obolochka1 {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         String s = ", ";
 
         int a = 77;
@@ -18,7 +18,7 @@ public class Obolochka1 {
 
         System.out.println("Первое приведение типов:");
         System.out.println("int: " + a + ", double: " + b + ", float: " + c + ", string: " + d);
-        System.out.println("Double: " + d1 + s + d2 + s + d3+ s + d4);
+        System.out.println("Double: " + d1 + s + d2 + s + d3 + s + d4);
 
 
         String f = Double.toString(3.14);

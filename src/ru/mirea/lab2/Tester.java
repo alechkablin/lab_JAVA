@@ -1,7 +1,7 @@
 package ru.mirea.lab2;
 
 public class Tester {
-    private Circle[] circles;
+    private final Circle[] circles;
     private int count;
 
     public Tester(int capacity) {

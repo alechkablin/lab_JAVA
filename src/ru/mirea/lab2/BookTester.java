@@ -69,7 +69,7 @@ public class BookTester {
     }
 
     static class Bookshelf {
-        private Book[] books;
+        private final Book[] books;
         private int bookCount;
 
         public Bookshelf(int capacity) {

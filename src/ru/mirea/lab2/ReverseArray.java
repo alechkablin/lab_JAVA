@@ -17,7 +17,7 @@ public class ReverseArray {
         System.out.println("Array after reversing elements:");
         printArray(array);
     }
-    
+
     private static void printArray(String[] array) {
         for (String element : array) {
             System.out.print(element + " ");

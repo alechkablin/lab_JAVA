@@ -1,8 +1,9 @@
 package ru.mirea.lab1;
+
 import java.util.Scanner;
+
 public class lab1_7 {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
         System.out.println("Введите число n:");
         int n = read.nextInt();

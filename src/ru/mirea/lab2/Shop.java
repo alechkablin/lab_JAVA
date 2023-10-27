@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Shop {
-    private List<String> computers = new ArrayList<>();//создание динамического массива
+    private final List<String> computers = new ArrayList<>();//создание динамического массива
 
     public void addComputer(String computer) {
         computers.add(computer);

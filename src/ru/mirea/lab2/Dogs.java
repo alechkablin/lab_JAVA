@@ -40,7 +40,7 @@ class Dog {
 }
 
 class DogKennel {
-    private List<Dog> dogs;
+    private final List<Dog> dogs;
 
     public DogKennel() {
         dogs = new ArrayList<>();
@@ -71,7 +71,7 @@ public class Dogs {
 
         System.out.println("Welcome to the Dog Kennel!");
         boolean flagMain = true;
-        while (flagMain == true) {
+        while (flagMain) {
             System.out.print("Enter the dog's name (or 'exit' to quit): ");
             String name = scanner.nextLine();
             if (name.equalsIgnoreCase("exit")) {
@@ -107,7 +107,7 @@ public class Dogs {
                     flagMain = false;
                     System.out.println("Exiting...");
                     break;
-                }else {
+                } else {
                     System.out.println("Invalid choice.");
                 }
             }

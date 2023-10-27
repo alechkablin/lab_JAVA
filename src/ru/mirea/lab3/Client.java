@@ -18,8 +18,8 @@ public class Client {
 
             }
         }
-        int array[] = new int[n]; //создаем массив
-        int a[] = new int[n]; //создаем массив
+        int[] array = new int[n]; //создаем массив
+        int[] a = new int[n]; //создаем массив
         int cnt = 0;
         for (int i = 0; i < n; i++) {
             array[i] = (int) (Math.random() * 10);//массив из n случайных чисел

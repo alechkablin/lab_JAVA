@@ -4,10 +4,12 @@ public class Ball {
     // Private attributes of coordinates
     private double x;//координаты
     private double y;
+
     public Ball(double x, double y) {//инициализация
         this.x = x;
         this.y = y;
     }
+
     public Ball() {
         this(0, 0);
     }//инициализация без аргуметов

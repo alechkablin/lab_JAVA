@@ -1,45 +1,45 @@
 package ru.mirea.lab3;
 
-import java.text.Format;
 import java.util.Formatter;
 import java.util.Scanner;
 
 public class Convert {
-    String currency_name_1, currency_name_2;
+    String currencyName1, currencyName2;
 
-    public Convert(String currency_name_1, String currency_name_2){
-        this.currency_name_1 = currency_name_1; //присваиваем полю аргумент
-        this.currency_name_2 = currency_name_2; //присваиваем полю аргумент
-    }
-    public Convert(){
-        this.currency_name_1 = "None"; //присваиваем полю значение
-        this.currency_name_2 = "None"; //присваиваем полю значение
+    public Convert(String currencyName1, String currencyName2) {
+        this.currencyName1 = currencyName1; //присваиваем полю аргумент
+        this.currencyName2 = currencyName2; //присваиваем полю аргумент
     }
 
-    public void setCurrency_name_2(String currency_name_2) {
-        this.currency_name_2 = currency_name_2;
+    public Convert() {
+        this.currencyName1 = "None"; //присваиваем полю значение
+        this.currencyName2 = "None"; //присваиваем полю значение
     }
-    //метод, меняющий Currency_name_2 на введенный аргумент
 
-    public void setCurrency_name_1(String currency_name_1) {
-        this.currency_name_1 = currency_name_1;
+    public void setCurrencyName2(String currencyName2) {
+        this.currencyName2 = currencyName2;
     }
     //метод, меняющий Currency_name_2 на введенный аргумент
 
-    public void menuConvert(){
+    public void setCurrencyName1(String currencyName1) {
+        this.currencyName1 = currencyName1;
+    }
+    //метод, меняющий Currency_name_2 на введенный аргумент
+
+    public void menuConvert() {
         Scanner read = new Scanner(System.in);
         System.out.println("Hi! It's currency convert: \nYou can choose currency\n \"usd\" - dollar\n \"rub\" - ruble\n " +
                 "\"chf\" - franc\n \"eur\" - euro\n \"jpy \" - yen\n \"gbp\" - pound sterling ");
         System.out.println("Please write your currency by 3 little symbol");
         System.out.print("Print first currency name:");
-        this.setCurrency_name_2(read.next());
+        this.setCurrencyName2(read.next());
         System.out.print("Print second currency name:");
-        this.setCurrency_name_1(read.next());
+        this.setCurrencyName1(read.next());
     }
 
-    public void toConvert(){
-        double dollar[] = new double[2];
-        switch (this.currency_name_1){
+    public void toConvert() {
+        double[] dollar = new double[2];
+        switch (this.currencyName1) {
             case ("usd"):
                 dollar[0] = 1.0;
                 break;
@@ -63,7 +63,7 @@ public class Convert {
                 System.out.println("Error of currency name");
                 return;
         }
-        switch (this.currency_name_2){
+        switch (this.currencyName2) {
             case ("usd"):
                 dollar[1] = 1;
                 break;
@@ -88,8 +88,8 @@ public class Convert {
                 return;
 
         }
-            Formatter form = new Formatter();
-            System.out.printf("%s = %.5f %s", currency_name_1, dollar[1] / dollar[0], currency_name_2);
+        Formatter form = new Formatter();
+        System.out.printf("%s = %.5f %s", currencyName1, dollar[1] / dollar[0], currencyName2);
 
     }
 }

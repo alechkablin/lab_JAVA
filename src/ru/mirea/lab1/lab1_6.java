@@ -1,8 +1,9 @@
 package ru.mirea.lab1;
+
 import java.util.Scanner;
+
 public class lab1_6 {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
 
         int size = 10;
@@ -10,7 +11,7 @@ public class lab1_6 {
 
         System.out.println("Гармонический ряд:");
         for (int i = 1; i <= size; i++) {
-            harmonic += 0.1/ i;
+            harmonic += 0.1 / i;
 
             System.out.printf("1/%d ", i);
         }

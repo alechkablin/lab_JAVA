@@ -1,7 +1,7 @@
 package ru.mirea.lab3;
 
-import java.util.Random;
 import java.util.Arrays;
+import java.util.Random;
 
 public class RandomArray {
     public static void main(String[] args) {
@@ -17,7 +17,7 @@ public class RandomArray {
         }
         Arrays.sort(array); //сортировка
         System.out.println(); //перенос строки
-        for (int i = 0; i < 10; i++){
+        for (int i = 0; i < 10; i++) {
             System.out.print(array[i] + " ");
         }
 

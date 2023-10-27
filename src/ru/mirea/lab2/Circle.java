@@ -1,8 +1,8 @@
 package ru.mirea.lab2;
 
 public class Circle {
-    private Point center;
-    private double radius;
+    private final Point center;
+    private final double radius;
 
     public Circle(Point center, double radius) {
         this.center = center;
