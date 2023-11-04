@@ -1,4 +1,4 @@
-package ru.mirea.lab18.throws_58.ex7;
+package ru.mirea.lab18.throws_58.ex8;
 
 import java.util.Scanner;
 
@@ -23,7 +23,7 @@ public class ThrowsDemo {
     }
 
     public static void main(String[] args) throws Exception {
-        ThrowsDemo task7 = new ThrowsDemo();
-        task7.getKey();
+        ThrowsDemo task8 = new ThrowsDemo();
+        task8.getKey();
     }
 }

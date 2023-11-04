@@ -3,7 +3,7 @@ package ru.mirea.lab10;
 import java.util.Comparator;
 
 public class SortingStudentsByGPA {
-    private static void quickSort(Student[] students, int low, int high, Comparator comparator) {
+    private static void quickSort(Student[] students, int low, int high, Comparator<Student> comparator) {
         if (low < high) {
             int pivotIndex = partition(students, low, high, comparator);
             quickSort(students, low, pivotIndex - 1, comparator);
@@ -11,7 +11,7 @@ public class SortingStudentsByGPA {
         }
     }
 
-    private static int partition(Student[] students, int low, int high, Comparator comparator) {
+    private static int partition(Student[] students, int low, int high, Comparator<Student> comparator) {
         Student pivot = students[high];
         int i = low - 1;
         for (int j = low; j < high; j++) {
@@ -28,7 +28,7 @@ public class SortingStudentsByGPA {
         return i + 1;
     }
 
-    public static void sort(Student[] students, Comparator comparator) {
+    public static void sort(Student[] students, Comparator<Student> comparator) {
         quickSort(students, 0, students.length - 1, comparator);
     }
 

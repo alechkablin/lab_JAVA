@@ -4,9 +4,11 @@ import java.util.Scanner;
 
 public class ThrowsDemo {
     public void getKey() {
-        Scanner sc = new Scanner(System.in);
-        String key = sc.next();
-        printDetails(key);
+        try (Scanner sc = new Scanner(System.in))
+        {
+            String key = sc.next();
+            printDetails(key);
+        }
     }
 
     public void printDetails(String key) {
