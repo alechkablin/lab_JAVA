@@ -3,9 +3,8 @@ package ru.mirea.lab18.exceptions;
 import java.util.Scanner;
 
 public class Exception4 {
-    public void exceptionDemo() {
-        try {
-            Scanner myScanner = new Scanner(System.in);
+    public void ExceptionDemo() {
+        try (Scanner myScanner = new Scanner(System.in)) {
             System.out.print("Enter an integer ");
             String intString = myScanner.next();
             int i = Integer.parseInt(intString);
@@ -21,7 +20,6 @@ public class Exception4 {
 
     public static void main(String[] args) {
         Exception4 e4 = new Exception4();
-        e4.exceptionDemo();
-
+        e4.ExceptionDemo();
     }
 }

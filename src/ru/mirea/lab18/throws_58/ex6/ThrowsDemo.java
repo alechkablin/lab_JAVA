@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class ThrowsDemo {
     public void getKey() {
-        try (Scanner sc = new Scanner(System.in))
-        {
+        try (Scanner sc = new Scanner(System.in)) {
             String key = sc.next();
             printDetails(key);
         }
@@ -21,7 +20,7 @@ public class ThrowsDemo {
     }
 
     private String getDetails(String key) {
-        if (key == "") {
+        if (key.isBlank()) {
             return "empty string";
         }
         return "data for " + key;
