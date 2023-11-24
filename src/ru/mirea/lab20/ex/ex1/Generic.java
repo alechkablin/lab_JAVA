@@ -1,6 +1,6 @@
 package ru.mirea.lab20.ex.ex1;
 
-class Generic<T extends Comparable, V extends Animal & Serializable, K> {
+class Generic<T extends Comparable<T>, V extends Animal & Serializable, K> {
     private final T variable1;
     private final V variable2;
     private final K variable3;
