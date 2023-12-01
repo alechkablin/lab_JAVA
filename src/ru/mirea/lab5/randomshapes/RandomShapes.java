@@ -1,7 +1,7 @@
 package ru.mirea.lab5.randomshapes;
 
-import java.awt.*;
 import javax.swing.*;
+import java.awt.*;
 
 class RandomShapes extends JFrame {
     int WINDOW_WIDTH = 600;

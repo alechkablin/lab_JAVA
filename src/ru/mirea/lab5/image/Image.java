@@ -1,7 +1,7 @@
 package ru.mirea.lab5.image;
 
-import java.awt.*;
 import javax.swing.*;
+import java.awt.*;
 
 class Image extends JFrame {
     int WINDOW_WIDTH = 600;
